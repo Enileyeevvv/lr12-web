@@ -9,8 +9,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  
+  <div class="content" id="app">
+    <h1>Список студентов</h1>
+    <h2>Подключаем vue.js, создаем объект app, с помощью деректив связываем элементы страницы с элементами скрипта. </h2>
+    <h2>Форма</h2>
+      <form autocomplete="off" id="form">
+        <div class="dag">
+          <label for="surname">Фамилия</label>
+
+          <input type="text" id="surname" placeholder="Енилеев" v-model="surname">
+        
+          </div>
+        <br>
+        <div class="dag">
+          <label for="name">Имя</label>
+          
+          <input type="text" id="name" placeholder="Ислам" v-model="name">
+        </div>
+        <button v-on:click="addNewNote" v-bind:disabled="isButtonDisabled">
+          Записать
+        </button>
+      </form>
+    </div>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="script.js"></script>
 </body>
