@@ -26,10 +26,14 @@
           
           <input type="text" id="name" placeholder="Ислам" v-model="name">
         </div>
+        <h2>количество знаков:{{countSymbols}}</h2>
         <button v-on:click="addNewNote" v-bind:disabled="isButtonDisabled">
           Записать
         </button>
       </form>
+      <ol v-if="li != 0" v-for="li in list">
+        <li>{{li}}</li>
+      </ol>
     </div>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="script.js"></script>

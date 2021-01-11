@@ -41,6 +41,11 @@ const App = {
         this.isButtonDisabled = true;
       }
     },
+  },
+  computed: {
+    countSymbols() {
+      return this.name.length + this.surname.length;
+    },
   }
 };
 
