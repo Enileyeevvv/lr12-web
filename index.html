@@ -31,9 +31,12 @@
           Записать
         </button>
       </form>
-      <ol v-if="li != 0" v-for="li in list">
+      <ol v-if="list != 0" v-for="li in list">
         <li>{{li}}</li>
       </ol>
+      <div v-else>
+        список пуст
+      </div>
     </div>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="script.js"></script>
